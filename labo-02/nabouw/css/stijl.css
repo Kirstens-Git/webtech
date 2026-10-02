@@ -1,0 +1,71 @@
+:root {
+    --papier: #fbf7f0;
+    --inkt: #2b2b2b;
+    --gedempt: #6b6b6b;
+    --accent: #b5451b;
+    --zebra: #f1e9dc;
+    size: 16px;
+}
+
+body {
+    background-color: var(--papier) ;
+    color: var(--inkt);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: unset;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--accent);
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: var(--gedempt);
+}
+
+a {
+    color: var(--accent);
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.slogan {
+    font-style: italic;
+    color: var(--gedempt);
+}
+
+.intro {
+    font-size: 1.25rem;
+}
+
+.kaart li:nth-child(odd) {
+    background-color: var(--zebra);
+}
+
+span {
+    color: var(--gedempt);
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+    color: var(--accent);
+}
+
+footer , footer a{
+    text-align: center;
+    color: var(--gedempt);
+    font-size: 0.75rem;
+}
