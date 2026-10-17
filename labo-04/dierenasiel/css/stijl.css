@@ -1,0 +1,38 @@
+/* stijl.css - labo 4, dierenasiel (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    --accent : #E6B53C;
+    --achtergrond : #1F3A2E;
+}
+
+/* === your rules === */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1F3A2E;
+    color: var(--accent);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    color: #f3efe6;
+    text-decoration: none;
+}
+.logo{
+    color: var(--accent);
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+li a{
+    padding: .75vw 1rem;
+}
+.actief{
+    background-color: var(--accent);
+    color: var(--achtergrond);
+    border-radius: .5rem;
+}

@@ -1,0 +1,40 @@
+/* stijl.css - labo 4, mondriaan (reset.css is divnked before this file) */
+
+/* === tokens === */
+:root {
+
+}
+
+/* === your rules === */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2vh;
+    height: 70vh;
+    width: 70vh;
+    background-color: #2554ab;
+    padding: 2vh;
+    margin: 15vh auto
+}
+div:nth-child(1) {
+    grid-column: 1 / 4;
+    background-color: #A090AF;
+}
+div:nth-child(2) {
+    background-color: #A16122;
+}
+div:nth-child(3) {
+    grid-column: 1 / 2;
+    background-color: #E7C948;
+}
+div:nth-child(4) {
+    grid-column: 4 / 5;
+    background-color: #13234E;
+}
+div:nth-child(5) {
+    grid-column: 1 / 4;
+    background-color: #AE9310;
+}
+div:nth-child(6) {
+    background-color: #CD2424;
+}
