@@ -1,0 +1,134 @@
+/* stijl.css - labo 5, koffiebar (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    --paper: #f4efe6;
+    --ink: #2b2b2b;
+    --dampend: #6b6b6b;
+    --bars: #2f241d;
+    --text: #f4efe6;
+    --accent: #c8742e;
+}
+
+/* === your rules === */
+body {
+    display: grid;
+    grid-template-areas:
+    "head head"
+    "side main"
+    "foot foot";
+    background-color: var(--paper);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .875rem;
+}
+
+
+header {
+    grid-area: head;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bars);
+}
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+header > a {
+    color: var(--accent);
+    text-decoration: none;
+    height: min-content;
+    padding: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+li a {
+    color: white;
+    text-decoration: none;
+    padding: 0rem 1rem;
+}
+.actief {
+    color: var(--accent);
+}
+
+
+aside {
+    grid-area: side;
+    width: 16rem;
+    padding: 2rem;
+    border-right: 1px solid #ddd5c8;
+}
+aside p {
+    margin-bottom: 1rem;
+    color: var(--dampend);
+}
+
+
+main {
+    grid-area: main;
+    padding: 1.5rem;
+}
+main ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    list-style-type: none;
+    padding: 0;
+}
+main ul li {
+    border-radius: .5vw;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h1 > p {
+    color: var(--dampend);
+    background-color: green;
+}
+h2 {
+    font-size: 1.5rem;
+}
+span {
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--accent);
+    color: white;
+    border-radius: 10rem;
+    margin: .75rem;
+    padding: .5rem .75rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main ul li:nth-child(2), main ul li:nth-child(5){
+    border-top: var(--accent) solid .5rem;
+}
+img {
+    border-radius: .5vw;
+    aspect-ratio: 1.3;
+    object-fit: cover;
+}
+div {
+    padding: 1.5rem;
+}
+div p:nth-child(3) {
+    color: var(--accent);
+    font-weight: bold;
+    justify-self: bottom;
+}
+
+
+footer {
+    grid-area: foot;
+    background-color: var(--bars);
+    color: var(--text);
+    text-align: center;
+    padding: 1rem 0;
+}

@@ -1,0 +1,50 @@
+/* stijl.css - labo 5, citaten (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+
+}
+
+/* === your rules === */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+blockquote {
+    border-left: .5rem solid;
+    flex: 1 1 15.5rem;
+    padding: .5rem;
+    font-weight: bold;
+}
+cite {
+    font-weight: 100;
+    font-style: normal;
+}
+.blauw{
+    color: blue;
+}
+.roze{
+    color: pink;
+}
+.rood{
+    color: red;
+}
+.oranje{
+    color: orange;
+}
+.groen{
+    color: green;
+}
+.salie{
+    color: #8FB89A;
+}
+.paars{
+    color: purple;
+}
+.grijs{
+    color: gray;
+}

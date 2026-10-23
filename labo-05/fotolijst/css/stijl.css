@@ -1,0 +1,63 @@
+/* stijl.css - labo 5, fotolijst (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+
+}
+
+/* === your rules === */
+body{
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+figure {
+    width: 36rem;
+    margin: 4rem auto;
+    position: relative;
+}
+img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 100%;
+}
+figcaption {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.vlakje.groen{
+    background-color: #283040;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 6rem;
+    height: 6rem;
+    order: 2;
+}
+.vlakje.roze{
+    background-color: #C0A088;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    width: 6rem;
+    height: 6rem;
+    z-index: 1;
+}
+.vlakje.rood{
+    background-color: #682800;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 6rem;
+    height: 6rem;
+    z-index: 1;
+}
+.vlakje.lime{
+    background-color: #505860;
+    position: absolute;
+    bottom: 4rem;
+    right: 4rem;
+    width: 6rem;
+    height: 6rem;
+}
